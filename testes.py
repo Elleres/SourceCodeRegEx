@@ -3,13 +3,33 @@ import re
 """
     Para testar as expressões regulares checar final do código.
 """
-
+def testar(expressao,lista):
+    print("Expressão regular: ", expressao)
+    for i in lista:
+        res = re.fullmatch(expressao, i)
+        if res == None:
+            print(i,"=> cadeia recusada")
+        else:
+            print(i,"=> cadeia aceita")
+        print()
 
 reNome = re.compile(r"[A-Z][a-z]+ ([A-Z][a-z]+ )?[A-Z][a-z]+")
 reEmail = re.compile(r"[a-z]+@[a-z]+((\.com\.br)|(\.br))")
 reSenha = re.compile(r"(?=.*[A-Z])(?=.*[0-9])[A-z0-9]+")
+reCPF = re.compile(r"([0-9]{3}\.){2}[0-9]{3}-[0-9]{2}")
+reTel = re.compile(r"((\([0-9]{2}\) 9[0-9]{4}-[0-9]{4})|(\([0-9]{2}\) 9[0-9]{4}[0-9]{4})|([0-9]{2} 9[0-9]{8}))")
+reDataHorario = re.compile(r"[0-9]{2}/[0-9]{2}/[0-9]{4} [0-2][0-9]:[0-5][0-9]:[0-5][0-9]")
+reNum = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
+reA = re.compile(r"(HM|MH)((h*m+h*m+h*)+|(m*h+m*)+|h+mh+)")
+reB = re.compile(r"(HM|MH)h*mh*(h*mh*mh*)*")
+reC = re.compile(r"(MH|HM)m[h m]*h")
+reD = re.compile(r"(MM|HH)(hm|mh)[h m]{2}[h m]*(hm|mh)")
+reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
+reF = re.compile(r"(MM|HH)(mm|hm|m)*h?")
+reG = re.compile(r"(H+|M+)+(h|m)*((m|mh|mhh)|()|h|hh)")
 
-listaNome = ['Agnes Karimy Da Silva Maia',
+listaNome = [
+'Agnes Karimy Da Silva Maia',
 'Alexandre Rogerio Andrade Moraes', 
 'Allan Marcelo Trindade De Amorim' ,
 'Amanda Leite De Alcantara',
@@ -60,7 +80,6 @@ listaNome = ['Agnes Karimy Da Silva Maia',
 'Yuri Gabriel Menezes Ferreira' ,
 'Yuri Luiz Silva Do Nascimento',
 ]
-
 listaEmail = [
 'agneskarimymaia@gmail.com',
 'alexandre.moraes@icen.ufpa.br',
@@ -113,7 +132,6 @@ listaEmail = [
 'ferreirayuri0901@gmail.com',
 'luizyuri57@gmail.com',
 ]
-
 listaSenha = [
     'JHKHJsdfdf9',
     'sdfsdfsdsf',
@@ -138,39 +156,54 @@ listaSenha = [
     'Tiago666',
     'ada12345',
 ]
+listaCPF = [
+"023.123.123-12",
+"023-123.123.123",
+"12.234.521-12",
+"123.1.2.12-12",
+"12312312311-12",
+"abb.cac.aaa-ad",
+"...-",
+"123.456.789-12",
+"567.234.111.12",
+"555-555-555.12",
+"000.000.000-00",
+"123,456,789-12",
+"@@@.@@@.@@@-@@",
+"tes.tef.unc-io",
+"soc.orr.ore-gi",
+"b12.123.144-12",
+"frasealeatoria",
+"123456789",
+]
+listaTel = [
+
+]
+listaDataHorario = []
+listaNum = []
+listaA = []
+listaB = []
+listaC = []
+listaD = []#!
+listaE = []
+listaF = []
+listaG = []
 
 #Nome
-""" print("Expressão regular: ", "[A-Z][a-z]+ ([A-Z][a-z]+ )?[A-Z][a-z]+")
-for i in listaNome:
-    res = re.fullmatch(reNome, i)
-    if res == None:
-        print(i,"=> cadeia recusada")
-    else:
-        print(i,"=> cadeia aceita")
-    print()
- """
-
+#testar(reNome,listaNome)
 
 #Senha
-""" print("Expressão regular: ", "(?=.*[A-Z])(?=.*[0-9])[A-z0-9]+")
-for i in listaSenha:
-    res = re.fullmatch(reSenha, i)
-    if res == None:
-        print(i,"=> cadeia recusada")
-    else:
-        print(i,"=> cadeia aceita")
-    print()
- """
+#testar(reSenha,listaSenha)
 
 #Email
-""" print("Expressão regular: ", "[a-z]+@[a-z]+((\.com\.br)|(\.br))")
-for i in listaEmail:
-    res = re.fullmatch(reEmail, i)
-    if res == None:
-        print(i,"=> cadeia recusada")
-    else:
-        print(i,"=> cadeia aceita")
-    print() """
+#testar(reEmail,listaEmail)
+
+#CPF
+#testar(reCPF,listaCPF)
+
+#Telefone
+#testar(reTel,listaTel)
 
 
-#Para testar, remova do comentário o bloco de código da expressão regular a ser testada.
+
+#Para testar, remova do comentário o jogo da velha antes da função testar
