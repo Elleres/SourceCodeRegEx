@@ -11,7 +11,7 @@ reNome = re.compile(r"[A-Z][a-z]+ ([A-Z][a-z]+ )?[A-Z][a-z]+")
 reEmail = re.compile(
     r"[A-Z0-9]*[a-z]+[A-z0-9]*@[A-Z0-9]*[a-z]+[A-z0-9]*((\.com\.br)|(\.br))")
 
-reSenhas3 = re.compile(r"[A-z0-9]{8}")
+reSenhas = re.compile(r"[A-z0-9]{8}")
 
 reCPF = re.compile(r"([0-9]{3}\.){2}[0-9]{3}-[0-9]{2}")
 
