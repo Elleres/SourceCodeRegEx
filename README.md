@@ -1,4 +1,4 @@
-<h1>Validação de Dados com Expressões Regulares Uma Atividade Prática </h1>
+<h1>Validação de Dados com Expressões Regulares <br>Uma Atividade Prática </h1>
 <br>Este repositório tem a função de salvar o código-fonte contendo diversas expressões regulares e seus testes.
 <br>Esse trabalho foi realizado pelos alunos:
 <ul>
