@@ -13,6 +13,29 @@ def testar(expressao,lista):
             print(i,"=> cadeia aceita")
         print()
 
+def arranjo(lis):
+    lista = []
+    for i in lis:
+        lista.append(i)
+        lista.append(i)
+    for i,x in enumerate(lista):
+        if i % 2 ==0:
+            lista[i] += "H"
+        else:
+            lista[i] += "M"
+    return lista
+
+def CombinacaoG(x,y):
+    listaI = ["H","M"]
+    listaF = []
+    aux = 2
+    while(aux <= y):
+        listaI = arranjo(listaI)
+        if aux >= x:
+            listaF += listaI
+        aux += 1
+    return listaF
+
 reNome = re.compile(r"[A-Z][a-z]+ ([A-Z][a-z]+ )?[A-Z][a-z]+")
 reEmail = re.compile(r"[a-z]+@[a-z]+((\.com\.br)|(\.br))")
 reSenha = re.compile(r"(?=.*[A-Z])(?=.*[0-9])[A-z0-9]+")
@@ -26,7 +49,6 @@ reC = re.compile(r"(MH|HM)m[h m]*h")
 reD = re.compile(r"(MM|HH)(hm|mh)[h m]{2}[h m]*(hm|mh)")
 reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
 reF = re.compile(r"(MM|HH)(mm|hm|m)*h?")
-reG = re.compile(r"(H+|M+)+(h|m)*((m|mh|mhh)|()|h|hh)")
 
 listaNome = [
 'Agnes Karimy Da Silva Maia',
@@ -364,7 +386,7 @@ listaF = [
 'MMmhhhmhhhmhmhmhmhh', 'MMhhmhmmmhmhmhhh', 'MMhh', 'MM', 'HH', 'MMhmhmhhmhhhmh', 'HHhhmh', 'HHmhmhhhh', 'MmMHMHM', 'HHmhmhh', 'mMMhmmmhhhm', 'MMhmhhhmhh', 'hhhmhm', 'HHmmMhhh',
 'MMMHmhhhhmhhh', 'MMhhmhhhhmh', 'MhhmmMMH', 'MMhhhhmhmhh', 'MMMhmhmh', 'HHmhmmmmhmhhhm', 'MMhmhhmmhmmm', 'MMhmmmm', 'HHmhmhhhm', 'MHmhmhmmmh', 'MMHMhhmhh', 'MMMHhhmmhh', 'mMMHMhm'
 'MMHmhhhmhhmh', 'MMHmhhhhmhh', 'MHhhhhhmhh', 'MMHmhmmmmhMHMHmm', 'MMHmmhmhmmhmM', 'MMHmhmmh', 'mmhhmMHMMH', 'MMHMHmmhmmhmh' , 'mhmhmmMH' , 'MMHmmhm', 'hmMMHmh', 'MMMHmhmmhmh','MMhh']
-listaG = []
+listaG = ["MMMh","HHm","HHmmmmmmmhhh","MMhhmhmhmhhhhmmhh"]
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
 #Nome
@@ -406,7 +428,17 @@ listaG = []
 #2F
 #testar(reF,listaF)
 
-#2G
-#testar(reG,listaG)
+#2G REMOVER TUDO ABAIXO DE DENTRO DO COMENTARIO E EXECUTAR PARA PODER TESTAR :)
+x = int(input("Digite o valor mínimo: "))
+y = int(input("Digite o valor máximo: "))
+
+comb = CombinacaoG(x,y)
+inicio = ""
+for i in comb:
+    inicio =inicio+ i + "|" 
+
+inicio = inicio[:-1]
+reG = re.compile(f"({inicio})[h m]+(?<!hhh)")
+testar(reG,listaG)
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
