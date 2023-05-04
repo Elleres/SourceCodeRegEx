@@ -35,4 +35,5 @@ reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
 
 reF = re.compile(r"(MM|HH)(mm|hm|m)*h?")
 
-reG = re.compile(r"(H+|M+)+(h|m)*((m|mh|mhh)|()|h|hh)")
+# reG está na página de testes apenas já que sua formação depende 
+# de algumas funções para funcionar de forma correta :)
