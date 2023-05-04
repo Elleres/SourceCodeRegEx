@@ -3,7 +3,7 @@ import re
 """
     Para testar as expressões regulares checar final do código.
 """
-def testar(expressao,lista): 
+def Testar(expressao,lista): 
     # Função para testar a expressão regular imprimindo de forma organizada no terminal
     print("Expressão regular: ", expressao)
     for i in lista:
@@ -14,7 +14,7 @@ def testar(expressao,lista):
             print(i,"=> cadeia aceita")
         print()
 
-def arranjo(lis):
+def Arranjo(lis):
     # Função para utilizada na função de fazer lista de combinações possíveis da 2G
     lista = []
     for i in lis:
@@ -33,7 +33,7 @@ def CombinacaoG(x,y):
     listaF = []
     aux = 2
     while(aux <= y):
-        listaI = arranjo(listaI)
+        listaI = Arranjo(listaI)
         if aux >= x:
             listaF += listaI
         aux += 1
@@ -488,43 +488,43 @@ listaG = [
 #Para testar, remova do comentário o jogo da velha antes da função testar
 
 #Nome
-#testar(reNome,listaNome)
+#Testar(reNome,listaNome)
 
 #Senha
-#testar(reSenha,listaSenha)
+#Testar(reSenha,listaSenha)
 
 #Email
-#testar(reEmail,listaEmail)
+#Testar(reEmail,listaEmail)
 
 #CPF
-#testar(reCPF,listaCPF)
+#Testar(reCPF,listaCPF)
 
 #Telefone
-#testar(reTel,listaTel)
+#Testar(reTel,listaTel)
 
 #Data e Horario
-#testar(reDataHorario,listaDataHorario)
+#Testar(reDataHorario,listaDataHorario)
 
 #Número com sinal
-#testar(reNum,listaNum)
+#Testar(reNum,listaNum)
 
 #2A
-#testar(reA,listaA)
+#Testar(reA,listaA)
 
 #2B
-#testar(reB,listaB)
+#Testar(reB,listaB)
 
 #2C
-#testar(reC,listaC)
+#Testar(reC,listaC)
 
 #2D
-#testar(reD,listaD)
+#Testar(reD,listaD)
 
 #2E
-#testar(reE,listaE)
+#Testar(reE,listaE)
 
 #2F
-#testar(reF,listaF)
+#Testar(reF,listaF)
 
 #2G REMOVER TUDO ABAIXO DE DENTRO DO COMENTARIO E EXECUTAR PARA PODER TESTAR :)
 """ x = int(input("Digite o valor mínimo: "))
@@ -537,6 +537,6 @@ for i in comb:
 
 inicio = inicio[:-1]
 reG = re.compile(f"({inicio})[h m]*(?<!hhh)")
-testar(reG,listaG) """
+Testar(reG,listaG) """
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
