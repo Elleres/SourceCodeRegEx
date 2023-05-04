@@ -17,9 +17,9 @@ reCPF = re.compile(r"([0-9]{3}\.){2}[0-9]{3}-[0-9]{2}")
 
 reTel = re.compile(r"((\([0-9]{2}\) 9[0-9]{4}-[0-9]{4})|(\([0-9]{2}\) 9[0-9]{4}[0-9]{4})|([0-9]{2} 9[0-9]{8}))")
 
-reDataHorario = re.compile(r"[0-9]{2}/[0-9]{2}/[0-9]{4} [0-2][0-9]:[0-5][0-9]:[0-5][0-9]")
+reDataHorario = re.compile(r"[0-9]{2}/[0-9]{2}/[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}")
 
-reNum = re.compile(r"[+ -]?[0-9]+(\.[0-9]+)?")
+reNum = re.compile(r"[+-]?[0-9]+(\.[0-9]+)?")
 
 """ Resolução da segunda questão. """
 
@@ -27,9 +27,9 @@ reA = re.compile(r"(HM|MH)((h*m+h*m+h*)+|(m*h+m*)+|h+mh+)")
 
 reB = re.compile(r"(HM|MH)h*mh*(h*mh*mh*)*")
 
-reC = re.compile(r"(MH|HM)m[h m]*h")
+reC = re.compile(r"(MH|HM)m[hm]*h")
 
-reD = re.compile(r"(MM|HH)(hm|mh)[h m]{2}[h m]*(hm|mh)")
+reD = re.compile(r"(MM|HH)(hm|mh)[hm]{2}[hm]*(hm|mh)")
 
 reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
 
