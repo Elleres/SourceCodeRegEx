@@ -887,6 +887,20 @@ Testar(reG,listaG) """
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
 
+def Corrigir(expressao,lista): 
+    # Função para testar a expressão regular imprimindo de forma organizada no terminal
+    print("Expressão regular: ", expressao)
+    for i in lista:
+        res = re.fullmatch(expressao, i)
+        if res == None:
+            listaR.append(i)
+        else:
+            listaAc.append(i)
 
+listaAc = []
+listaR = []
 
+Corrigir(reF,listaF)
 
+for i in listaAc:
+    print(i+", ",end='')
