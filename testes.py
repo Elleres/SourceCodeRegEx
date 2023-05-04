@@ -3,7 +3,8 @@ import re
 """
     Para testar as expressões regulares checar final do código.
 """
-def testar(expressao,lista):
+def testar(expressao,lista): 
+    # Função para testar a expressão regular imprimindo de forma organizada no terminal
     print("Expressão regular: ", expressao)
     for i in lista:
         res = re.fullmatch(expressao, i)
@@ -14,6 +15,7 @@ def testar(expressao,lista):
         print()
 
 def arranjo(lis):
+    # Função para utilizada na função de fazer lista de combinações possíveis da 2G
     lista = []
     for i in lis:
         lista.append(i)
@@ -26,6 +28,7 @@ def arranjo(lis):
     return lista
 
 def CombinacaoG(x,y):
+    # Função que retorna a lista propriamente dita
     listaI = ["H","M"]
     listaF = []
     aux = 2
@@ -36,6 +39,7 @@ def CombinacaoG(x,y):
         aux += 1
     return listaF
 
+# Expressões regulares
 reNome = re.compile(r"[A-Z][a-z]+ ([A-Z][a-z]+ )?[A-Z][a-z]+")
 reEmail = re.compile(r"[a-z]+@[a-z]+((\.com\.br)|(\.br))")
 reSenha = re.compile(r"(?=.*[A-Z])(?=.*[0-9])[A-z0-9]+")
@@ -50,6 +54,7 @@ reD = re.compile(r"(MM|HH)(hm|mh)[h m]{2}[h m]*(hm|mh)")
 reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
 reF = re.compile(r"(MM|HH)(mm|hm|m)*h?")
 
+# Listas de palavras para testar
 listaNome = [
 'Agnes Karimy Da Silva Maia',
 'Alexandre Rogerio Andrade Moraes', 
@@ -386,9 +391,102 @@ listaF = [
 'MMmhhhmhhhmhmhmhmhh', 'MMhhmhmmmhmhmhhh', 'MMhh', 'MM', 'HH', 'MMhmhmhhmhhhmh', 'HHhhmh', 'HHmhmhhhh', 'MmMHMHM', 'HHmhmhh', 'mMMhmmmhhhm', 'MMhmhhhmhh', 'hhhmhm', 'HHmmMhhh',
 'MMMHmhhhhmhhh', 'MMhhmhhhhmh', 'MhhmmMMH', 'MMhhhhmhmhh', 'MMMhmhmh', 'HHmhmmmmhmhhhm', 'MMhmhhmmhmmm', 'MMhmmmm', 'HHmhmhhhm', 'MHmhmhmmmh', 'MMHMhhmhh', 'MMMHhhmmhh', 'mMMHMhm'
 'MMHmhhhmhhmh', 'MMHmhhhhmhh', 'MHhhhhhmhh', 'MMHmhmmmmhMHMHmm', 'MMHmmhmhmmhmM', 'MMHmhmmh', 'mmhhmMHMMH', 'MMHMHmmhmmhmh' , 'mhmhmmMH' , 'MMHmmhm', 'hmMMHmh', 'MMMHmhmmhmh','MMhh']
-listaG = ["MMMh","HHm","HHmmmmmmmhhh","MMhhmhmhmhhhhmmhh"]
+listaG = [
+"MMMh",
+"HHm",
+"HHmmmmmmmhhh",
+"MMhhmhmhmhhhhmmhh",
+"HHHHHHHHHHHHHHHHmhhmhmmm",
+"HHHHHHHMMMMMMHHHHHmhmmhmmhhhh",
+"HMmmmmhmhmhmhmhmh",
+"HMH",
+"HMHMHMHMMHmmmmmmmmmmm",
+"H",
+"HMmmmhmMhmMHMHMHM",
+"MHMMHHMHMHMMHmmmmmhhhh",
+"HHMHMMHHMMmmmmhmhmhmhm",
+"HMHMHMHMHMmmmhmhmhmhm",
+"HMHMHMHMHMmhmhmhmhh",
+"HMHMHMHMMMMMHmhmmhhmhmh",
+"HMHMHMHMHmhmhmhmhm",
+"HMHMHMHMHMHhhhhhhhhh",
+"HMMHMMMMMHHmmmmmmmmmhh",
+"MHMMHmmhmhmhmhhmm",
+"MMMMMHHHmmmhmhmh",
+"MMMMMhmhmmhmh",
+"MMMMMhhhhhhhhhm",
+"MMMMMMMMhhh",
+"MMMMMhmhmhmhmh",
+"MMMMMMMMhhhmhmhmh",
+"HHHHHHHHmmmmmhhhhhhm",
+"HHHHHHmmmmmmmhm",
+"HHHmmmmmmhmhmhhh",
+"HHHHHHH",
+"MMMMMMMMMMMM",
+"HMhhhhhhm",
+"MMMHmhmhmhmhmhmhh",
+"MMMMHHHmmhmmhhm",
+"MHMHMHMHHM",
+"MMMHMHMHMHMHM",
+"HMMHMHMHMHmmmmmhh",
+"MMMMMMMHHHMmmhhh",
+"MHMHMHMHMHMHMhmhhh",
+"MMMMMMMMHhhhmmhm",
+"MHMHMHMHMMHmmhmhmhm",
+"HHHHHHMmmhmhmh",
+"HMHMHMHMhmhmhmh",
+"HHHHHmmmmmmmhhh",
+"HMHHMmhmmhmhmhmhM",
+"HHHHHHHHHHHHHHHHH",
+"MMMMMMMMMMMMM",
+"M",
+"MHMmhmhmhmhm",
+"MhmhmhmMHMhmh",
+"MHmhmhmhmhmMHMm",
+"HMMHMHMhhhmh",
+"HMHMHMHMHmhmhmhm",
+"HMHhmmhhmhmmmmh",
+"HHMHMMHHMHMHMmhmmm",
+"HMhmhmmhmmhhm",
+"HMMMMMMHhmhmhmhmmh",
+"MMHHHMMmmmmm",
+"MMMMMhhhmhmhmhm",
+"MHMMHMHmhmhmhmhmh",
+"MHGMHMHMHMhmmmmh",
+"HMHMHMhmmhmh",
+"HMMMMMHmhmhmh",
+"MHMHMMHMmmmmmh",
+"HMMHMHMmmmh",
+"HMMMMHHHmmmmhm",
+"HMHMMMHMmmhhhhmm",
+"HMMMMHMHHHHHMmm",
+"HMMMMHMHMHMHHmmhhh",
+"HMHMMHHmmhmhmhmhm",
+"HMHMHHMMmmmhmhmhmh",
+"HMHMhmhmmh",
+"HMMMMHMHMMHmmmm",
+"HMMMMHHMmhhmhmhhm",
+"HMMHMHMmmhmhmhh",
+"HMHmhmhmhh",
+"MHMhmhmmmhh",
+"HHmhmhmhmmhmh",
+"HMmmhmhmmhm",
+"HhHmmm",
+"HHHmhmhmhh",
+"MMhmhmhmmh",
+"HHmmhmh",
+"HMhmhmh",
+"HHHmmmmhmhmh",
+"MMmmmmmhhh",
+"Hmmhmhmhmhh",
+"HHHmmhmhmhmhh",
+"HHHmmhmhmhmh",
+"MMMhmhmhmh",
+"HMHMhmmhmh",
+]
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
+
 #Nome
 #testar(reNome,listaNome)
 
@@ -429,7 +527,7 @@ listaG = ["MMMh","HHm","HHmmmmmmmhhh","MMhhmhmhmhhhhmmhh"]
 #testar(reF,listaF)
 
 #2G REMOVER TUDO ABAIXO DE DENTRO DO COMENTARIO E EXECUTAR PARA PODER TESTAR :)
-x = int(input("Digite o valor mínimo: "))
+""" x = int(input("Digite o valor mínimo: "))
 y = int(input("Digite o valor máximo: "))
 
 comb = CombinacaoG(x,y)
@@ -438,7 +536,7 @@ for i in comb:
     inicio =inicio+ i + "|" 
 
 inicio = inicio[:-1]
-reG = re.compile(f"({inicio})[h m]+(?<!hhh)")
-testar(reG,listaG)
+reG = re.compile(f"({inicio})[h m]*(?<!hhh)")
+testar(reG,listaG) """
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
