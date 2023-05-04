@@ -51,7 +51,7 @@ reA = re.compile(r"(HM|MH)((h*m+h*m+h*)+|(m*h+m*)+|h+mh+)")
 reB = re.compile(r"(HM|MH)h*mh*(h*mh*mh*)*")
 reC = re.compile(r"(MH|HM)m[hm]*h")
 reD = re.compile(r"(MM|HH)(hm|mh)[hm]{2}[hm]*(hm|mh)")
-reE = re.compile(r"(MM|HH)((hm)*|(mh)*)")
+reE = re.compile(r"(MM|HH)((hm)*h?|(mh)*m?)")
 reF = re.compile(r"(MM|HH)(mm|hm|m)*h?")
 
 # Listas de palavras para testar
@@ -158,6 +158,16 @@ listaEmail = [
 'yuri.0n333@gmail.com',
 'ferreirayuri0901@gmail.com',
 'luizyuri57@gmail.com',
+"alexandremoraes@icenufpa.br",
+"andreyapaiva@icenufpa.br", 
+"carlosbranco@icenufpa.br", 
+"gabrielpereira@icenufpa.br", 
+"maxjunior@icenufpa.br", 
+"joaosilveirabezerra@icenufpa.br", 
+"isabelcamarao@icenufpa.br", 
+"luizfilho@icenufpa.br", 
+"eltontorres@icenufpa.br", 
+"thiagocorrea@icenufpa.br"
 ]
 listaSenha = [
     'JHKHJsdfdf9',
