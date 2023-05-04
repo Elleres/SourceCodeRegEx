@@ -177,18 +177,196 @@ listaCPF = [
 "123456789",
 ]
 listaTel = [
-
+"(91) 992961708",
+"(12)12345-9123",
+"91 99999-9999",
+"122 91234-1234",
+"9 1912341234",
+"92  912341234",
+"91   912341234",
+"91912341234",
+"9112341234",
+"(91 ) 91234-1234",
+"(9 1) 91234-1234",
+"( 91) 91234-1234",
+" 91) 91234-1234",
+" (91) 91234-1234",
+"91 999999999",
+"(912) 91234-1234",
+"(9999) 912341234",
+"(91) 92131-1231",
+"(91) 921311231",
+"91 912341234",
+"00 900000000",
+"xx 9xxxxxxxx",
+"(xx) 9xxxxxxxx",
+"(xx) 9xxxx-xxxx",
+"xx 999990999",
+"@@ 9@@@@@@@@",
+"12 890312341",
+"123 123412344",
+"zz 9zzzz9zzz",
+"12 987654321"
 ]
 listaDataHorario = []
 listaNum = []
-listaA = []
-listaB = []
+listaA = [
+'HMhmm', 
+'MHmm',
+'HMmh',
+'HMh', 
+'HMhmhhhhh',
+'HMmmmhm',
+'MHhhh',
+'HMhmhmh',
+'HMmhm', 
+'MHhmh', 
+'MHhhhmmmhhmmh', 
+'HMmmm', 
+'HMhmmmh', 
+'MHhhmh', 
+'HMhhmhh',
+'Hhmh', 
+'mmHM', 
+'HMm', 
+'HHmh', 
+'HMMhmm', 
+'Mhmmh', 
+'HmmhHmM', 
+'mhhMmh', 
+'HMh', 
+'MHm', 
+'MMm', 
+'HMmmh', 
+'MHHmm', 
+'HMhMm', 
+'hMmm'
+]
+listaB = [
+'HMm', 
+'HMhm', 
+'MHmmmh', 
+'HMmhhhh', 
+'MHmhmmh', 
+'HMhmhhmhmh', 
+'MHhmhhmhmh', 
+'HMhmh', 
+'HMmmm', 
+'HMmh', 
+'MHmmmmm', 
+'HMhmhmm', 
+'MHmmmhmm', 
+'MHmmmmmmm', 
+'MHhmhhhhh', 
+'MHhmhmhmhmhm',
+'HMmm', 
+'HMh', 
+'MHmmmhm', 
+'HMmmhhhh', 
+'MHmmhmmh', 
+'HMhmmhhmhmh', 
+'MHhmmhhmhmh', 
+'HMmhmh', 
+'HMmmmm', 
+'HMmmh', 
+'MHmmmmmm', 
+'HMhmmhmm', 
+'MHmmmmhmm', 
+'MHmmmmmmmm', 
+'MHhmhmhhhh', 
+'MHhmhmmhmhmhm']
 listaC = []
-listaD = []#!
-listaE = []
-listaF = []
+listaD = [
+"HHmhmmmmmmmhm",
+"MMhmhhhhhhhhhmh",
+"HHHMmmmmmmhm",
+"HMmmmmmmhhhhm",
+"hMHmmmmmhhhmm",
+"HHhmMMMMMhM",
+"MMmhmmmmmmmmhm",
+"MMhmhm",
+"HHhmmhm",
+"MMmhhm",
+"HMmhmh",
+"HMmmmHH",
+"HHmmmhhmh",
+"MMhmhmmmh",
+"HHmhmmmmhm",
+"HHmhmmmmmhm",
+"MMhhhhhmmh",
+"HHmmmmhhhhmmm",
+"HHHHHH",
+"HHmhhhhHmh",
+"MMmhmmmhm",
+"MMhmhmhm",
+"HHmhmmmhh",
+"HHmhmhmhmhmhmhmhm",
+"Hhmmmhmmhm",
+"hhhmmmhmhmmmh",
+"hmmhmmmhmmmmhh",
+"HHmmmHHHmmmh",
+"hhHMMMMhhmmh",
+"hhHHmmmmhhm",
+"MMhmhmmmhmhmmhm",
+"mmhmmmmhmmhm",
+"hmmhmhmmhmh",
+"HHhmmmmmhmhmhmhmhm",
+"MMhhhmhmhmmmhm",
+"HHmhmmhmh",
+"MMhhmhmhmhHHmm",
+"MMhhmhmhhmh",
+"mhmhmMHMHMHM",
+"HHmmhmmhmhh",
+"mhmhmhm",
+"HHhmmhmh",
+"HHHHHHHHHHH",
+"MMMMMMMMM",
+"HmhmhHmmh",
+"HHMmhh",
+"HmhmhmhmHMHM",
+"HMHMHMHMH",
+"HMmmm hmmhm",
+"HHmhmhmmhmh",
+"MMHhmhmhmhmh",
+"MMHMHHmhmhmh",
+"mmmHHMhmmh",
+"HMmmhmmh",
+"HMHMhmhmmh",
+"mmmHmmmh",
+"mmhmhmhmhm",
+"HHmmhm",
+"HHmmmhmmhmhm",
+"HHmmmhmhmhmh",
+"HHmhmhmhmhm",
+"MMhmhmhmhm",
+"MMhmhmhmhm"
+]
+listaE = [
+'MMhmhmhmhmhmmmh','MH', 'MHmhmhmhmh', 'HHmhmhmhmh', 'MMMhmhmmmhmhmmhmh', 'HHhmhmhmhm', 'HMHMMHMhm', 'MMhmhmhmmmhHMmh', 'HHhmh','MMHMH', 'mmhmhmmmh', 'HHmhmhmhm', 
+'h', 'MMmhmhmhh', 'mmmhmhmh', 'HHmhmhmhmh', 'MMhmhmmmh', 'MMhmhmhm', 'HHhmhmhmhmhmhm', 'HHmh', 'MMmh', 'MMhm', 'MMhmhmhmhm', 'H', 'M', 'HHMmhhmhmMMHMH', 'MMhmmmhmhm', 'HHmhmhmh',
+'HMhmhmhm', 'MH', 'MHMHmhmhhmh', 'HMmhmhmmm', 'MHmhmmhmhmh', 'HMmhmhmmmmmmh', 'MMmmmmmm', 'Hmmhmmm', 'HHmmhmmmhhhhh', 'MMmhmmh', 'Hhmh', 'HHmhmhmh', 'HHmmMMMhmhmhMM', 'HmMmmHM', 
+'MMmhmhmhm', 'MhmmH', 'HHmhmhmhm', 'HmmH', 'HmhmH', 'MMmhmhm', 'Mhmmhmhmhmhmhmhmh', 'HmmhmhmMmh', 'MhmhmhmMHMHmh', 'MMmmhmhm', 'HHmhmhmhmhmh', 'MMhmmhm', 'HHmhmhmhmhh', 'HHmhmhmmhmh',
+'HHmhhmhm','MMhmhmhmh', 'Mhmhm', 'MHMHMMHM', 'MMHMmmhm', 'mhmhmhmmhMHMH', 'HHmmhmhm', 'HHmhmh', 'MMhmhmhmhmhm', 'HHmhmhmmmmhmhm', 'HHmhmhmhmh', 'MHMhmhm', 'MMHmhmhmhMHMHmhmhm',
+'HHmhmhhm', 'MHMHmmhmhmMHMH', 'HHMHmhmhmh', 'HHmhmhmhm', 'HHmhmhmhmh', 'hhmhmh', 'mhmhmh', 'HmhmhmmhMMHMHM', 'MHMHmmhmmh', 'HHmhmhmhmhmhmhmhmh', 'HHmhmhm', 'HHmhmhhmHHMH','MHhm', 'M'
+'MHMHMHMHMMHM', 'MHmh', 'hhMh', 'MHmhmhmhmh', 'MMmhmh', 'MMhmhm', 'MMhmhmhmhmMMHhmhm', 'MMhmhmMMHMHMH', 'mmhmhmMMHmhm', 'mhmh', 'mmmhmhmMhmhm', 'MMhmhmmhmhmhmhm', 'MMMhmHHHm', 'MM',
+'HHHHHHHHH', 'MMMMMMMM', 'MMHmhmhmhm', 'MMMHMHMMHmhmhmhmmmhm', 'MhhMMHmhm', 'Mhmhmhmm', 'MMHmhmhmhhhhmhmhhh', 'MMHmmhmmmmmhmmhhhhhh', 'MMhmmmhmmmhmmh', 'HHHHmmmhhhhhhhmmhhh', 'HHmh',
+'HHmmhhmhhh', 'HHmhmhmhmhhhhmmmmm', 'HHmhmhmhmhmh', 'MMhmhmmmmhmmhhhhmmh', 'HHmhmhmmhMHMHmhmmmh','HHMmhmhhh', 'HMhmhmmmhMHMH', 'HHMhmhmmhm', 'MMhmhmhmhm', 'HHmhmh', 'HHHHHmhmhmhhm']
+listaF = [
+'MMhmhmhmhmhmmmhh','MH', 'MHmhmhmhmhhhhh', 'HHmhmhmmmmhhmh', 'MMMhmhmhhhh', 'HHhmhmhmmhmhhhm', 'HMHMMHMhhhm', 'MMhmhmhmmmhHMmhh', 'HHhmhhh','MMHMhH', 'mmhmhhmmmh', 'HHmhmhmhm', 
+'h', 'MMmhmhmhh', 'mmmhmhmh', 'HHmhmhmhmh', 'MMhmhmmmh', 'MMhmhmhm', 'HHhmhmhmhmhmhm', 'HHmh', 'MMmh', 'MMhm', 'MMhmhmhmhm', 'H', 'M', 'HHMmhhmhmMMHMH', 'MMhmmmhmhm', 'HHmhmhmh',
+'HMhmhmhm', 'MH', 'MHMHmhmhhmh', 'HMmhmhmmm', 'MHmhmmhmhmh', 'HMmhmhmhhh', 'MMmmmmmmhhh', 'Hmmhhhmmm', 'HHmmhmmmhh', 'MMmhmmhh', 'Hhmh', 'HHmhmhmhhhh', 'HHmmMMMhmhhhmhMM', 'HmMmmHM', 
+'MMmhmhmhm', 'MhmmH', 'HHmhmhmhm', 'HmmH', 'HmhmH', 'MMmhmhmhh', 'Mhmmhmhmhmhmhmhmh', 'HmmhmhmMmh', 'MhmhmhmMHMHmh', 'MMmmhmhm', 'HHmhmhmhmhmh', 'MMhmmhm', 'HHmhmhhmhmhh', 'HHmhmhmmhmh',
+'HHmhhmhm','MMhmhmhmh', 'Mhmhm', 'MHMHMMHM', 'MMHMmmhm', 'mhmhmhmmhMHMH', 'HHmmhmhm', 'HHmhmh', 'MMhmhmhmhmhm', 'HHmhmhmmmmhmhm', 'HHmhmhmhmh', 'MHMhmhm', 'MMHmhmhmhmhhh', 'MMHhh'
+'HHmhmhhm', 'MHMHmmhmhmMHMH', 'HHMHmhmhmh', 'HHmhmhmhm', 'HHmhmhmhmh', 'hhmhmh', 'mhmhmh', 'HmhmhmmhMMHMHM', 'MHMHmmhmmh', 'HHmhmhmhmhmhmhmhmh', 'HHmhmhm', 'HHmhmhhmHHMH','MHhm', 'M'
+'MHMHMHMHMMHM', 'MHmh', 'hhMh', 'MHmhmhmhmh', 'MMmhmh', 'MMhmhm', 'MMhmhmhmhmMMHhmhm', 'MMhmhmMMHMHMH', 'mmhmhmMMHmhm', 'mhmh', 'mmmhmhmMhmhm', 'MMhmhmmhmhmhmhm', 'MMMhmHHHm', 'MM',
+'HHHHHHHHH', 'MMMMMMMM', 'MMHmhmhmhm', 'MMMHMHMMHmhmhmhmmmhm', 'MhhMMHmhm', 'Mhmhmhmm', 'MMHmhmhmhhhhmhmhhh', 'MMHmmhmmmmmhmmhhhhhh', 'MMhmmmhmmmhmmh', 'HHHHmmmhhhhhhhmmhhh', 'HHmh',
+'HHmmhhmhhh', 'HHmhmhmhmhhhhmmmmm', 'HHmhmhmhmhmh', 'MMhmhmmmmhmmhhhhmmh', 'HHmhmhmmhMHMHmhmmmh','HHMmhmhhh', 'HMhmhmmmhMHMH', 'HHMhmhmmhm', 'MMhmhmhmhm', 'HHmhmh', 'HHHHHmhmhmhhm',
+'MMmhhhmhhhmhmhmhmhh', 'MMhhmhmmmhmhmhhh', 'MMhh', 'MM', 'HH', 'MMhmhmhhmhhhmh', 'HHhhmh', 'HHmhmhhhh', 'MmMHMHM', 'HHmhmhh', 'mMMhmmmhhhm', 'MMhmhhhmhh', 'hhhmhm', 'HHmmMhhh',
+'MMMHmhhhhmhhh', 'MMhhmhhhhmh', 'MhhmmMMH', 'MMhhhhmhmhh', 'MMMhmhmh', 'HHmhmmmmhmhhhm', 'MMhmhhmmhmmm', 'MMhmmmm', 'HHmhmhhhm', 'MHmhmhmmmh', 'MMHMhhmhh', 'MMMHhhmmhh', 'mMMHMhm'
+'MMHmhhhmhhmh', 'MMHmhhhhmhh', 'MHhhhhhmhh', 'MMHmhmmmmhMHMHmm', 'MMHmmhmhmmhmM', 'MMHmhmmh', 'mmhhmMHMMH', 'MMHMHmmhmmhmh' , 'mhmhmmMH' , 'MMHmmhm', 'hmMMHmh', 'MMMHmhmmhmh','MMhh']
 listaG = []
 
+#Para testar, remova do comentário o jogo da velha antes da função testar
 #Nome
 #testar(reNome,listaNome)
 
@@ -204,6 +382,31 @@ listaG = []
 #Telefone
 #testar(reTel,listaTel)
 
+#Data e Horario
+#testar(reDataHorario,listaDataHorario)
 
+#Número com sinal
+#testar(reNum,listaNum)
+
+#2A
+#testar(reA,listaA)
+
+#2B
+#testar(reB,listaB)
+
+#2C
+#testar(reC,listaC)
+
+#2D
+#testar(reD,listaD)
+
+#2E
+#testar(reE,listaE)
+
+#2F
+#testar(reF,listaF)
+
+#2G
+#testar(reG,listaG)
 
 #Para testar, remova do comentário o jogo da velha antes da função testar
