@@ -553,8 +553,17 @@ listaA = [
 'HMmmh', 
 'MHHmm', 
 'HMhMm', 
-'hMmm'
-]
+'hMmm',
+'Hhmh', 
+'mmHM', 
+'HMm', 
+'HHmh', 
+'HMMhmm', 
+'Mhmmh',
+'HmmhHmM',
+'mhhMmh', 'HMh', 'MHm', 'MMm', 'HMmmh', 'MHHmm',
+'HMh', 'MHm', 'MMm', 'HMmmh', 'MHHmm', 'HMhMm', 'hMmm', 'mmHH', 'HmmmH', 'hHhH', 'Hmmhmhmh', 'Hmmmmm', 'mmm', 'mmmmh', 'H', 'M', 'HHHHHHHH', 'hMhmHmH', 'HMHMH', 'mmmmmmh' ,'mhHM', 'MMMMMmhhH', 'HMHM'
+ ]
 listaB = [
 'HMm', 
 'HMhm', 
@@ -587,7 +596,17 @@ listaB = [
 'MHmmmmhmm', 
 'MHmmmmmmmm', 
 'MHhmhmhhhh', 
-'MHhmhmmhmhmhm']
+'MHhmhmmhmhmhm',
+"HMm", "HMhm", "MHmmmh", "HMmhhhh",
+"MHmhmmh", "HMhmhhmhmh", "MHhmhhmhmh", "HMhmh", "HMmmm", "HMmh", "MHmmmmm", "HMhmhmm",
+"MHmmmhmm", "MHmmmmmmm", "MHhmhhhhh", "MHmmmmmmm", "HMhhhhhhhhhm", "HMhhhhhhhmh", "HMmmmhhhhh",
+"MHmhhhhhhhhhh", "HMmmmmmhhhhhhhh", "HMmmmhmhm", "HMmhhhmhhhhhmh", "HMhhhmmmhhhhh", "HMmhmhmhmhm",
+"MHmmhhhhhhhhm", "MHhhhhhmmmhhhhh", "MHm", "MHmmm", "MHmmmhmhmhhhhhh", "MHhhhhhhmmhhhhhhhm",
+"HMmm", "HMh", "MHmmmhm", "HMmmhhhh", "MHmmhmmh", "HMhmmhhmhmh", "MHhmmhhmhmh", "HMmhmh", "HMmmmm", 
+"HMmmh", "MHmmmmmm", "HMhmmhmm", "MHmmmmhmm", "MHmmmmmmmm", "MHhmhmhhhh", "MHhmhmmhmhmhm", "HMhhmhhhhhhhm", "HMhmhhhhhhmh", 
+"HMmmmmhhhhh", "MHmhmhhhhhhhhh", "HMmmmmmmhhhhhhhh", "HMmmmmhmhm", "HMmmhhhmhhhhhmh", 
+"HMhhhmmmhhmhhh", "HMmhmhmhmmhm". "MHmmmhhhhhhhhm", "MHmhhhhhmmmhhhhh", "MHmm", "MHmmmm", "MHmmmmhmhmhhhhhh", "MHhhhmhhhmmhhhhhhhm"
+]
 listaC = [
 'HHmhmhmhmmhm',
 'HMmmmmhmh',
